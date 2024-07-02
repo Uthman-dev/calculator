@@ -55,3 +55,30 @@ button:active{
 .operator-btn:active{
     background-color: hsl(35, 100%, 75%);
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    body {
+      flex-direction: column;
+    }
+    #calculator {
+      max-width: 300px;
+    }
+    #display {
+      font-size: 3rem;
+    }
+    #keys {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      padding: 15px;
+    }
+    button {
+      width: 70px;
+      height: 70px;
+      font-size: 2rem;
+    }
+  }
